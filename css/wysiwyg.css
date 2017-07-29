@@ -1,0 +1,51 @@
+div#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+img {
+	width: 80%;
+}
+
+div#cardOutput {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+person:nth-child(even) {
+    background-color: lightyellow;
+}
+
+person:nth-child(odd) {
+    background-color: aqua;
+}
+
+.dottedoutline {
+	border: 2px dotted red;
+}
+
+person.cardStyling {
+	padding: 10px;
+	width: 20%;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 2.5em;
+}
+
+form {
+	margin-top: 3em;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 910px) {
+    div#cardOutput {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	person.cardStyling {
+		width: 100%;
+	}
+}
