@@ -78,9 +78,10 @@ textInputArea.addEventListener("keyup", (event) => {
 
 
 
-function handleClick(MouseEvent) {
-  myExactTarget = MouseEvent.target;
-  MouseEvent.currentTarget.classList.toggle("dottedoutline");
+function handleClick(event) {
+  myExactTarget = event.currentTarget.children[1].children[0];
+  console.log ("myExactTarget", myExactTarget);
+  event.currentTarget.classList.toggle("dottedoutline");
   textInputArea.focus();
 
 
